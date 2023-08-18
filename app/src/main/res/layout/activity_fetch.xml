@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FetchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/urlSearchBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:hint="@string/url_hint"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/fetchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/play_reset_button"
+            android:padding="10dp"
+            android:text="@string/fetchBtn"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="49dp" />
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/fetchedImageGridView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="1dp"
+        android:horizontalSpacing="4dp"
+        android:numColumns="4"
+        android:verticalSpacing="4dp" />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:enabled="false"
+        android:textColor="#100F0F"
+        android:text="Start Game"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="0.1dp"
+        android:backgroundTint="#3EE7ED"
+        android:progress="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:textColor="#100F0F"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

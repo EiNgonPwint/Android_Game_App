@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidGame_Team5</string>
+    <string name="fetchBtn">Fetch</string>
+    <string name="url_hint">Your image catalogue URL</string>
+    <string name="main_header">The Memory Game</string>
+    <string name="main_play">Play</string>
+    <string name="main_tutorial">Tutorial</string>
+    <string name="main_leaderboard">Leaderboard</string>
+</resources>
